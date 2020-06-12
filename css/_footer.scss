@@ -1,0 +1,15 @@
+footer {
+    grid-area: footer;
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
+
+    p {
+        color: white;
+        padding: $spacing;
+        text-align: center;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+}

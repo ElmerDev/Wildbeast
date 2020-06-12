@@ -1,0 +1,10 @@
+.adverts {
+    grid-area: adverts;
+    padding: $spacing;
+    background: #fafbfc;
+    
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: $spacing;
+}

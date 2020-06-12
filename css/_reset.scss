@@ -1,0 +1,27 @@
+body,
+p,
+h1,
+ul,
+li,
+blockquote {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Vollkorn, Georgia, serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}

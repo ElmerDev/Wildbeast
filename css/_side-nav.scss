@@ -1,0 +1,64 @@
+.side-nav {
+    grid-area: side-nav;
+    padding: $spacing;
+    background: #fafbfc;
+}
+
+.side-nav a {
+    display: block;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0 auto $spacing;
+    background: white;
+    padding: $spacing - 10;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(44, 44, 44, .15);
+    transition: .5s ease-out;
+
+    &:hover {
+        background: #b07dfb;
+    }
+}
+
+@media (max-width: 760px) {
+    .side-nav {
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .side-nav::after {
+        content: "→";
+        position: absolute;
+        top: 5px;
+        right: 30px;
+        color: rgba(0, 0, 0, .3);
+        animation: arrow .5s ease-in 0s infinite alternate;
+    }
+
+    .side-nav ul {
+        display: flex;
+    }
+
+    .side-nav li {
+        flex: 1 0 60px;
+    }
+
+    .side-nav {
+        padding: 0 30px;
+    }
+
+    .side-nav a {
+        margin: 30px 30px 30px 0;
+    }
+}
+
+@keyframes arrow {
+    from {
+        right: 30px;
+    }
+    to {
+        right: 20px;
+    }
+}

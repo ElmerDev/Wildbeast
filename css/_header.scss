@@ -1,0 +1,51 @@
+header {
+    grid-area: header;
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
+    padding: $spacing;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header li + li {
+    margin-left: $spacing;
+}
+
+header li a {
+    display: block;
+    padding: $spacing - 20;
+    color: white;
+    font-size: 1.125em;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    transition: .5s;
+}
+
+header ul a:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+@media (max-width: 760px) {
+    header {
+        grid-template-columns: auto;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+    header a {
+        font-size: 1em;
+    }
+    header li + li {
+        margin-left: 10px;
+    }
+}
